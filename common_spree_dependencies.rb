@@ -7,9 +7,7 @@ gem 'coffee-rails'
 gem 'sass-rails'
 gem 'sqlite3', platforms: [:ruby, :mingw, :mswin, :x64_mingw]
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'spree', '~> 3.1.12'
-gem 'spree_auth_devise', '~> 3.3'
-gem 'spree_gateway', '~> 3.3'
+
 
 platforms :jruby do
   gem 'jruby-openssl'
@@ -18,8 +16,7 @@ end
 
 platforms :ruby do
   gem 'mysql2'
-  gem 'pg'
-  gem 'puma'
+
 end
 
 group :test do
@@ -45,4 +42,6 @@ end
 group :test, :development do
   gem 'rubocop', require: false
   gem 'pry-byebug'
+  gem 'pg'
+  gem 'puma'
 end
